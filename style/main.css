@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Bai+Jamjuree:ital,wght@0,400;0,600;1,400;1,600&family=Barlow+Condensed:ital,wght@0,400;0,700;1,400;1,700&family=Barlow+Semi+Condensed:ital,wght@0,500;0,600;1,500;1,600&family=Barlow:ital,wght@0,400;0,600;1,400;1,600&family=Commissioner:wght@400;500;700;800&family=DM+Serif+Display:ital@0;1&family=Fraunces:ital,wght@0,700;0,900;1,700;1,900&family=Inter:wght@400;700&family=Josefin+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Karla:ital,wght@0,400;0,700;1,400;1,700&family=Libre+Franklin:ital,wght@0,300;0,600;0,700;1,300;1,600;1,700&family=Manrope:wght@600;800&family=Montserrat:ital,wght@0,700;1,700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,500;1,700&family=Outfit:wght@300;400;600&family=Overpass:ital,wght@0,300;0,600;1,300;1,600&family=Poppins:ital,wght@0,700;1,700&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&family=Red+Hat+Display:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Space+Mono:ital,wght@0,400;0,700;1,700&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+input,
+button,
+select,
+textarea {
+  font: inherit;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+/* remove animation for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  background-color: #e0e8ff;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 90%;
+  max-width: 420px;
+  background: white;
+  margin: 50px auto;
+}
+
+/* ========================================================================== */
+/*                                  // .MAIN                                  */
+/* ========================================================================== */
+.main {
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  width: 100%;
+  background: #00ff48;
+}
+
+.text p {
+  opacity: 0.7;
+  padding-top: 1rem;
+}
+
+.info {
+  padding-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  width: 100%;
+  background: #f8f9fe;
+  border-radius: 15px;
+}
+
+.price .price-year {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.price .price-year .price-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.price .price-year .price-text strong {
+  font-weight: 900;
+}
+
+.price .price-year .price-text span {
+  opacity: 0.7;
+}
+
+.price .change {
+  font-weight: 700;
+  color: #4b45ee;
+  cursor: pointer;
+}
+
+.price .change:hover {
+  text-decoration: underline;
+}
+
+.button {
+  padding-top: 2rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.button button {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 15px;
+  background: #382ae1;
+  color: white;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.388);
+          box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.388);
+  cursor: pointer;
+}
+
+.button button:hover {
+  opacity: 0.8;
+}
+
+.button strong {
+  color: #878da8;
+  cursor: pointer;
+}
+
+.button strong:hover {
+  color: black;
+}
+
+@media screen and (max-width: 424.98px) {
+  .main {
+    padding: 2rem 1rem;
+  }
+  .price {
+    font-size: 90%;
+    padding: 1rem;
+  }
+  .price .price-year {
+    min-width: 150px;
+    gap: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 319.98px) {
+  .text {
+    padding: 1rem;
+  }
+  .price {
+    font-size: 85%;
+    padding: 1rem;
+  }
+  .price .price-year {
+    min-width: 120px;
+    gap: 0.5rem;
+  }
+  .price .price-year img {
+    width: 25%;
+    height: 25%;
+  }
+  .button {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
